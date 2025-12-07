@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+body {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.section {
+  padding-top: 2em;
+  margin-top: -2em;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 1.75em 4em;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  height: 8.7vh;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item-link {
+  text-decoration: none;
+  color: #111;
+}
+
+.menu-item-button {
+  text-decoration: none;
+  color: #111;
+  text-transform: uppercase;
+  background-color: #7ae5fd;
+  padding: 1.15em 2em;
+  border-radius: 32px;
+}
+
+.first-screen {
+  background-image: url("./assets/images/9d87e92590ae5ecb611ebe146e21a634.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.first-screen-container {
+  max-width: 25%;
+  margin-left: 6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3.75em;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.main-description {
+  font-size: 1.25em;
+  margin-bottom: 2.35rem;
+}
+
+.main-button {
+  text-decoration: none;
+  color: #111;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 1.15em 4em;
+  border-radius: 32px;
+}
+
+.about-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  height: 60vh;
+}
+
+.about-screen-container {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.about-title {
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-text {
+  font-size: 1rem;
+  color: #73a6b1;
+}
+
+.description-screen {
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-block {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1fdff;
+  padding: 5vh 4vw;
+  align-items: center;
+  margin-bottom: 7.5vh;
+  gap: 8rem;
+}
+
+.description-header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.description-text {
+  font-size: 1.33rem;
+  line-height: 1.15;
+}
+
+.block-img {
+  max-width: 35vw;
+  height: auto;
+  border-radius: 12px;
+}
+
+.mission-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
+  height: 100vh;
+}
+
+.mission-screen-container {
+  position: relative;
+  background-color: #f1fdff;
+  padding: 13vh 5vw;
+}
+
+.mission-text {
+  font-size: 1.66rem;
+  line-height: 1.15;
+  width: 45%;
+  text-align: left;
+}
+
+#background-line {
+  top: -16vh;
+  right: -4vw;
+  position: absolute;
+}
+
+#smiley-kids-img {
+  top: -34.5vh;
+  right: 5vw;
+  position: absolute;
+}
+
+.support-us-screen {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  height: 65vh;
+}
+
+.support-us-title {
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.support-us-description {
+  font-size: 1rem;
+  color: #73a6b1;
+  margin-bottom: 2.75rem;
+}
+
+.goal-counter {
+  margin-bottom: 4.5rem;
+}
+
+.goal-counter-text {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+}
+
+.counter span {
+  padding: 0.1rem 0.75rem;
+  font-size: 3.75rem;
+}
+
+#span-center {
+  border-left: 0.125rem solid #9ad2de;
+  border-right: 0.125rem solid #9ad2de;
+}
+
+.contact-us-screen {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 8vh 7vw;
+  height: 100vh;
+  background-color: #f9fadf;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+}
+
+.contacts-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.contacts-info {
+  text-align: left;
+  width: 25%;
+  line-height: 1.15;
+}
+
+.contacts-description {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+#number {
+  font-weight: 800;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
+
+.form-container-img {
+  width: 30vw;
+  height: auto;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  text-align: left;
+}
+
+.subscribe-form-title {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  line-height: 1.15;
+}
+
+.subscribe-form-input[type="text"],
+.subscribe-form-input[type="email"] {
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: none;
+  border-radius: 32px;
+  background-color: #f9fadf;
+  font-size: 1rem;
+}
+
+.subscribe-form-button {
+  width: 100%;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 32px;
+  background-color: #7ae5fd;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 820px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  .header-container {
+    padding: 1em 2em;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: #111;
+    z-index: 1001;
+    position: relative;
+  }
+
+  .menu-toggle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='3' fill='%23111'/%3E%3Crect y='8' width='30' height='3' fill='%23111'/%3E%3Crect y='16' width='30' height='3' fill='%23111'/%3E%3C/svg%3E")
+      center/contain no-repeat;
+  }
+  .menu-toggle span {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .nav-menu.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    gap: 2.5rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .menu-item-link,
+  .menu-item-button {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .menu-item-button {
+    display: inline-block;
+    padding: 1.2em 3em;
+  }
+
+  .logo {
+    height: 6vh;
+  }
+
+  .first-screen {
+    margin-top: 0;
+    height: 80vh;
+    width: auto;
+    padding: 2rem 1rem;
+  }
+
+  .first-screen-container {
+    max-width: 50%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .main-title {
+    font-size: 2.75em;
+    margin-bottom: 0.5rem;
+  }
+
+  .main-description {
+    font-size: 1em;
+    margin-bottom: 1.85rem;
+  }
+
+  .main-button {
+    padding: 1em 2.25em;
+  }
+
+  .about-screen {
+    height: 50vh;
+  }
+
+  .about-screen-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .about-title {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-subtitle {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-text {
+    font-size: 0.875rem;
+  }
+
+  .description-block {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 3vh 3vw;
+    margin-bottom: 4vh;
+  }
+
+  .block-img {
+    max-width: 80%;
+  }
+
+  .description-header {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description-text {
+    font-size: 1.2rem;
+  }
+
+  .mission-screen {
+    height: 80vh;
+  }
+
+  .mission-screen-container {
+    position: relative;
+    background-color: #f1fdff;
+    padding: 5vh 3vw;
+  }
+
+  .mission-text {
+    font-size: 1.4rem;
+  }
+
+  #background-line {
+    top: -1vh;
+    right: -4vw;
+    width: 66%;
+  }
+
+  #smiley-kids-img {
+    top: -15vh;
+    right: 3vw;
+    width: 50%;
+  }
+
+  .support-us-screen {
+    height: 50vh;
+  }
+
+  .support-us-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .support-us-title {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .support-us-description {
+    font-size: 0.875rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .goal-counter {
+    margin-bottom: 3.5rem;
+  }
+
+  .goal-counter-text {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .counter span {
+    padding: 0.05rem 0.66rem;
+    font-size: 3.25rem;
+  }
+
+  .contact-us-screen {
+    padding: 5vh 4vw;
+  }
+
+  .contacts-container {
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-title {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contacts-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    text-align: left;
+    width: 75%;
+    line-height: 1.15;
+  }
+
+  .contacts-description {
+    margin-bottom: 1.75rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .form-container-img {
+    width: 40vw;
+  }
+
+  .subscribe-form {
+    max-width: 66%;
+    text-align: center;
+  }
+
+  .subscribe-form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subscribe-form-input[type="text"],
+  .subscribe-form-input[type="email"] {
+    padding: 1.125rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .subscribe-form-button {
+    padding: 1.125rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 1em 1em;
+  }
+
+  .menu-item-link,
+  .menu-item-button {
+    font-size: 1em;
+  }
+
+  .first-screen {
+    height: 70vh;
+    align-items: flex-start;
+  }
+
+  .first-screen-container {
+    margin-top: 5rem;
+    max-width: 66%;
+  }
+
+  .main-title {
+    font-size: 2em;
+    margin-bottom: 0.25rem;
+  }
+
+  .main-description {
+    font-size: 0.875em;
+    margin-bottom: 1.6em;
+  }
+
+  .main-button {
+    padding: 0.625em 0.5em;
+  }
+
+  .about-screen-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .about-text {
+    font-size: 0.75rem;
+  }
+
+  .description-block {
+    gap: 0.75rem;
+    padding: 2vh 2vw;
+    margin-bottom: 2.5vh;
+  }
+
+  .block-img {
+    max-width: 90%;
+  }
+
+  .description-header {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .description-text {
+    font-size: 1rem;
+  }
+
+  .mission-screen-container {
+    padding: 5vh 3vw;
+  }
+
+  .mission-text {
+    font-size: 1.2rem;
+  }
+
+  #background-line {
+    top: 10vh;
+    right: -3vw;
+    width: 60%;
+  }
+
+  #smiley-kids-img {
+    top: 5vh;
+    right: 1vw;
+    width: 60%;
+  }
+
+  .support-us-screen {
+    height: 40vh;
+  }
+
+  .support-us-title {
+    font-size: 2.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .support-us-description {
+    font-size: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .goal-counter {
+    margin-bottom: 3rem;
+  }
+
+  .goal-counter-text {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .counter span {
+    padding: 0.05rem 0.5rem;
+    font-size: 2.75rem;
+  }
+
+  .contact-us-screen {
+    padding: 3vh 3vw;
+  }
+
+  .contacts-container {
+    gap: 1.5rem;
+  }
+
+  .contacts-title {
+    font-size: 2.5rem;
+  }
+
+  .contacts-info {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .contacts-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-container {
+    gap: 1.5rem;
+  }
+
+  .form-container-img {
+    width: 50vw;
+  }
+
+  .subscribe-form {
+    max-width: 100%;
+  }
+
+  .subscribe-form-title {
+    font-size: 1.375rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .subscribe-form-input[type="text"],
+  .subscribe-form-input[type="email"] {
+    padding: 1rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .subscribe-form-button {
+    padding: 1rem;
+  }
+}
